@@ -1,20 +1,16 @@
 import PropTypes from 'prop-types';
 
-const Link = ({ route }) => {
+
+const Link = ({route}) => {
     return (
-        <div>
-            <ul className="mr-10">
-                <li ><a href={route.path}>{route.name}</a></li>
-            </ul>
+        <div className='mr-10'>
+            <li><a href={route.path}>{route.name}</a></li>
         </div>
     );
 };
 
- Link.propTypes = {
-    route: PropTypes.object.isRequired,
-    
-    // ... define your prop validations
-  };
-
+Link.propTypes = {
+    route: PropTypes.object.isRequired
+}
 
 export default Link;
